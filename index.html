@@ -38,7 +38,7 @@
           />
         </div>
       </main>
-      <section id="sectionAboutVariable">
+      <section id="section-container">
         <h1 class="title-section">VARIÁVEIS</h1>
         <div class="variable-container">
           <div class="content-info">
@@ -75,11 +75,103 @@
                 <img src="./img/image.png" alt="" />
               </p>
             </div>
-            <div class="item-exemplo card">
-              <h2 class="title">Exemplo 3</h2>
+          </div>
+        </div>
+      </section>
+      <section id="section-container">
+        <h1 class="title-section">Objetos</h1>
+        <div class="variable-container">
+          <div class="content-info">
+            <div class="item card">
+              <h2 class="title">O que são objetos?</h2>
               <p class="description">
-                <img src="./img/image.png" alt="" />
+                Em JavaScript, a maioria das coisas são objetos. Um objeto é uma
+                coleção de dados e/ou funcionalidades relacionadas (que
+                geralmente consistem em diversas variáveis e funções — que são
+                chamadas de propriedades e métodos quando estão dentro de
+                objetos). Vamos trabalhar com um exemplo para entender como eles
+                são.
               </p>
+            </div>
+            <div class="item card">
+              <h2 class="title">Por que usar objetos?</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>Organização:</span>Agrupar dados relacionados em um
+                  único lugar torna o código mais organizado e fácil de
+                  entender.
+                </li>
+                <li class="topics">
+                  <span>Reutilização:</span>Você pode criar vários objetos com a
+                  mesma estrutura, economizando tempo e evitando repetições.
+                </li>
+                <li class="topics">
+                  <span>Modelagem:</span>Objetos permitem modelar entidades do
+                  mundo real, como pessoas, produtos, etc.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="title">Como criar um objeto em JS?</h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <pre>
+               <code>
+             <span class="coments">// Criando um objeto literal</span>
+                  <span class="type-variavel">const</span> <span class="name-object">pessoa</span> = {
+                      <span class="key">nome</span>: <span class="string">"João"</span>, 
+                      <span class="key">idade</span>: <span class="number">30</span>,
+                      <span class="key">cidade</span>: <span class="string">"Brasília"</span>,
+                      <span class="coments">// Um método (função dentro do objeto)</span>
+                      <span class="key">saudacao</span>: <span class="type-variavel">function</span>() {
+                        <span class="metod">console</span>.log(<span class="string">"Olá, meu nome é "</span> + <span class="metod">this</span>.nome);
+                      }
+                    };</code
+              >
+             </pre>
+              </div>
+            </div>
+            <div class="card">
+              <h2 class="title">Conceitos importantes</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>Propriedades:</span>São os atributos do objeto, como
+                  <span class="att">nome</span>, <span class="att">idade</span>,
+                  <span class="att">marca</span>, etc.
+                </li>
+                <li class="topics">
+                  <span>Métodos:</span>São as ações que o objeto pode realizar,
+                  como <span class="att">saudação</span>,
+                  <span class="att">ligar</span>,
+                  <span class="att">desconto</span>, etc.
+                </li>
+                <li class="topics">
+                  <span>This:</span>Dentro de um método,
+                  <span class="att">this</span> se refere ao próprio objeto
+                </li>
+                <li class="topics">
+                  <span>Construtor:</span>Uma função especial usada para criar
+                  objetos de um determinado tipo.
+                </li>
+                <li class="topics">
+                  <span>Prototipos:</span> Um mecanismo de herança em JavaScript
+                  que permite criar objetos que herdam propriedades e métodos de
+                  outros objetos.
+                </li>
+              </ul>
+              <div class="resumo">
+                <h3>Em resumo</h3>
+                <p class="description">
+                  Objetos são uma parte fundamental do JavaScript e são usados
+                  para modelar dados e comportamentos de forma organizada e
+                  flexível. Ao entender como criar e usar objetos, você estará
+                  habilitado a construir aplicações JavaScript mais complexas e
+                  poderosas
+                </p>
+              </div>
             </div>
           </div>
         </div>

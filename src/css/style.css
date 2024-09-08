@@ -52,7 +52,7 @@ header {
   color: #d4ccb6;
 }
 /* variaveis */
-#sectionAboutVariable {
+#section-container {
   height: 100vh;
 }
 .title-section {
@@ -102,11 +102,89 @@ header {
 .content-exemplos {
   margin-top: 4rem;
   display: flex;
-  justify-content: space-between;
-
-  width: 60%;
+  max-width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
 }
 .item-exemplo {
   text-align: center;
-  width: 30%;
+  width: 280px;
+}
+
+/* sections about objetcs */
+.ul-container {
+  padding: 12px 26px;
+  margin-left: 1rem;
+  list-style: #fff;
+  color: #afb6c2;
+}
+.topics {
+  margin-bottom: 0.6rem;
+}
+.topics span {
+  padding-right: 0.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+.att {
+  color: #a72c0d;
+}
+span {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.code-container {
+  background-color: #1e1f20;
+  padding: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  & h3 {
+    color: #ffc632;
+    margin-left: 4.5rem;
+  }
+  & .coments {
+    color: #707070;
+  }
+  & .type-variavel {
+    color: rgb(128, 0, 55);
+    padding: 0 0.4rem;
+  }
+  & .name-object {
+    color: #cecece;
+  }
+  & .key {
+    color: #d05d0b;
+  }
+  & .string {
+    color: rgb(22, 159, 18);
+    padding-left: 0.4rem;
+  }
+  & .number {
+    color: rgb(25, 68, 224);
+    padding-left: 0.4rem;
+  }
+  & .metod {
+    color: rgb(114, 141, 239);
+  }
+}
+.header-code {
+  display: flex;
+  justify-content: space-between;
+  & button {
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    padding: 1px 10px;
+    border: 1px solid blakc;
+  }
+}
+.resumo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: red;
 }
