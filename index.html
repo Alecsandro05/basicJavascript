@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
+    /> -->
 
     <title>Trabalho</title>
   </head>
   <body>
     <div class="container">
+      <header>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#variable">Variáveis</a></li>
+            <li class="nav-item"><a href="#object">Objetos</a></li>
+            <li class="nav-item">
+              <a href="#repetion">Laços de repetições</a>
+            </li>
+            <li class="nav-item">
+              <a href="#decision">Estrutura de decisão</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <main class="main-container">
         <div class="left">
           <h1
@@ -38,7 +53,8 @@
           />
         </div>
       </main>
-      <section id="section-container">
+      <!-- variaveis -->
+      <section id="section-container variable">
         <h1 class="title-section">VARIÁVEIS</h1>
         <div class="variable-container">
           <div class="content-info">
@@ -61,24 +77,25 @@
                 früh não é a mesma que Früh porque JavaScript é case sensitive.
               </p>
             </div>
-          </div>
-          <div class="content-exemplos">
-            <div class="item-exemplo card">
-              <h2 class="title">Exemplo 1</h2>
-              <p class="description">
-                <img src="./img/image.png" alt="" />
-              </p>
-            </div>
-            <div class="item-exemplo card">
-              <h2 class="title">Exemplo 2</h2>
-              <p class="description">
-                <img src="./img/image.png" alt="" />
-              </p>
+            <div class="content-exemplos">
+              <div class="item-exemplo card">
+                <h2 class="title">Exemplo 1</h2>
+                <p class="description">
+                  <img src="./img/image.png" alt="" />
+                </p>
+              </div>
+              <div class="item-exemplo card">
+                <h2 class="title">Exemplo 2</h2>
+                <p class="description">
+                  <img src="./img/image.png" alt="" />
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="section-container">
+      <!-- Objetos -->
+      <section id="section-container object">
         <h1 class="title-section">Objetos</h1>
         <div class="variable-container">
           <div class="content-info">
@@ -119,7 +136,8 @@
                   <button>copy</button>
                 </div>
                 <pre>
-               <code>
+        <div class="code">
+                 <code>
              <span class="coments">// Criando um objeto literal</span>
                   <span class="type-variavel">const</span> <span class="name-object">pessoa</span> = {
                       <span class="key">nome</span>: <span class="string">"João"</span>, 
@@ -129,8 +147,8 @@
                       <span class="key">saudacao</span>: <span class="type-variavel">function</span>() {
                         <span class="metod">console</span>.log(<span class="string">"Olá, meu nome é "</span> + <span class="metod">this</span>.nome);
                       }
-                    };</code
-              >
+                    };</code>
+        </div>
              </pre>
               </div>
             </div>
@@ -162,8 +180,8 @@
                   outros objetos.
                 </li>
               </ul>
-              <div class="resumo">
-                <h3>Em resumo</h3>
+              <div class="card resumo">
+                <h2 class="title">Em resumo</h2>
                 <p class="description">
                   Objetos são uma parte fundamental do JavaScript e são usados
                   para modelar dados e comportamentos de forma organizada e
@@ -171,6 +189,141 @@
                   habilitado a construir aplicações JavaScript mais complexas e
                   poderosas
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Estrutura de decisão -->
+      <section id="section-container decision">
+        <h1 class="title-section">Estrutura de decisão</h1>
+        <div class="variable-container">
+          <div class="content-info">
+            <div class="card">
+              <h2 class="title">O que são as estruturas de decisão?</h2>
+              <p class="description">
+                As estruturas de decisão permitem que o seu código tome caminhos
+                diferentes com base em determinadas condições. Elas são
+                essenciais para criar programas mais dinâmicos e inteligentes,
+                que podem se adaptar a diferentes situações
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="title">Principais estruturas de decisão no JS</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>if...else:</span> A mais básica, permite executar um
+                  bloco de código se uma condição for verdadeira, e outro bloco
+                  (opcional) se for falsa.
+                </li>
+                <li class="topics">
+                  <span>switch:</span>Ideal para quando você precisa verificar o
+                  valor de uma expressão contra múltiplas opções.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="title">Exemplo 1: if...else</h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+                  <span class="type-variavel">let</span> <span class="name-object">idade</span> = <span class="number">18</span>,
+                      <span class="type-variavel">if</span>( idade >= 18)  {
+                        <span class="metod">console</span>.log(<span class="string">"Você é maior de idade."</span> )
+                      } <span class="type-variavel">else</span>{ 
+                       <span class="metod">console</span>.log(<span class="string">"Você é menor de idade."</span> )
+                      };
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    A variável <span class="att">idade</span> armazena um
+                    número.
+                  </li>
+                  <li class="topics">
+                    A condição <span class="att">idade >= 18</span> é
+                    verificada.
+                  </li>
+                  <li class="topics">
+                    Se a condição for verdadeira (ou seja, a pessoa tem 18 anos
+                    ou mais), a mensagem "Você é maior de idade." é exibida no
+                    console.
+                  </li>
+                  <li class="topics">
+                    Caso contrário, a mensagem "Você é menor de idade." é
+                    exibida.
+                  </li>
+                </ul>
+                <!-- Neste exemplo:
+
+A variável idade armazena um número.
+A condição idade >= 18 é verificada.
+Se a condição for verdadeira (ou seja, a pessoa tem 18 anos ou mais), a mensagem "Você é maior de idade." é exibida no console.
+Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
+              </div>
+              <h2 class="title">Exemplo 2: switch</h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+             
+                  <span class="type-variavel">let</span> <span class="name-object">diaDaSemana</span> = <span class="string">"sábado"</span>,
+                      <span class="type-variavel">switch</span>( diaDaSemana)  {
+                        <span class="type-variavel">case</span> <span class="string">"sábado"</span>:
+                        <span class="type-variavel">case</span> <span class="string">"domingo"</span>:
+                           <span class="metod">console</span>.log(<span class="string">"Final de semana!"</span> );
+                        <span class="type-variavel">break</span>   
+                        <span class="type-variavel">case</span> <span class="string">"segunda"</span>:
+                        <span class="type-variavel">case</span> <span class="string">"terça"</span>:
+                        <span class="type-variavel">case</span> <span class="string">"quarta"</span>:
+                        <span class="type-variavel">case</span> <span class="string">"quinta"</span>:
+                        <span class="type-variavel">case</span> <span class="string">"sexta"</span>:
+                          <span class="metod">console</span>.log(<span class="string">"Dia de semana!"</span> );
+                            <span class="type-variavel">break</span> 
+                        <span class="type-variavel">default:</span>
+                             <span class="metod">console</span>.log(<span class="string">"Dia inválido."</span> );
+
+                      } 
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    A variável<span class="att"> diaDaSemana</span> armazena uma
+                    string.
+                  </li>
+                  <li class="topics">
+                    O valor de <span class="att"> diaDaSemana</span>é comparado
+                    com cada <span class="att">case</span>
+                  </li>
+                  <li class="topics">
+                    Se o valor corresponder a um <span class="att">case</span>,o
+                    código dentro daquele bloco é executado.
+                  </li>
+                  <li class="topics">
+                    O <span class="att">break</span> interrompe a execução do
+                    <span class="att">switch</span> após encontrar uma
+                    correspondência.
+                  </li>
+                  <li class="topics">
+                    O <span class="att">default </span> é executado se nenhum
+                    dos<span class="att"> case</span> corresponder.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
