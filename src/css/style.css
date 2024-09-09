@@ -65,7 +65,7 @@
 }
 .content-info {
   width: 100%;
-  background-color: red;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -101,11 +101,13 @@
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  background-color: forestgreen;
 }
 .item-exemplo {
   text-align: center;
-  width: 280px;
+  width: 420px;
+}
+.img-variable {
+  width: 200px;
 }
 
 /* sections about objetcs */

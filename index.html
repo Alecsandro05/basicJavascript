@@ -80,15 +80,31 @@
             <div class="content-exemplos">
               <div class="item-exemplo card">
                 <h2 class="title">Exemplo 1</h2>
-                <p class="description">
-                  <img src="./img/image.png" alt="" />
-                </p>
+                <div class="code-container">
+                  <div class="code">
+                    <pre> 
+               <code>
+             
+<span class="type-variavel">let</span> <span class="name-object">name</span> = <span class="string">"Márcio Araya"</span>,
+                     
+                    </code>
+                   </pre>
+                  </div>
+                </div>
               </div>
               <div class="item-exemplo card">
                 <h2 class="title">Exemplo 2</h2>
-                <p class="description">
-                  <img src="./img/image.png" alt="" />
-                </p>
+                <div class="code-container">
+                  <div class="code">
+                    <pre> 
+               <code>
+             
+<span class="type-variavel">const</span> <span class="name-object">number</span> = <span class="number">333</span>
+                     
+                    </code>
+                   </pre>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -245,21 +261,21 @@
               <div class="description-code">
                 <ul class="ul-container">
                   <li class="topics">
-                    A variável <span class="att">idade</span> armazena um
-                    número.
+                    <span>A variável:</span>
+                    <span class="att">idade</span> armazena um número.
                   </li>
                   <li class="topics">
-                    A condição <span class="att">idade >= 18</span> é
-                    verificada.
+                    <span>A condição:</span>
+                    <span class="att">idade >= 18</span> é verificada.
                   </li>
                   <li class="topics">
-                    Se a condição for verdadeira (ou seja, a pessoa tem 18 anos
-                    ou mais), a mensagem "Você é maior de idade." é exibida no
-                    console.
+                    <span>Se a condição:</span> for verdadeira (ou seja, a
+                    pessoa tem 18 anos ou mais), a mensagem "Você é maior de
+                    idade." é exibida no console.
                   </li>
                   <li class="topics">
-                    Caso contrário, a mensagem "Você é menor de idade." é
-                    exibida.
+                    <span>Caso contrário:</span> a mensagem "Você é menor de
+                    idade." é exibida.
                   </li>
                 </ul>
                 <!-- Neste exemplo:
@@ -303,25 +319,321 @@ Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
               <div class="description-code">
                 <ul class="ul-container">
                   <li class="topics">
-                    A variável<span class="att"> diaDaSemana</span> armazena uma
-                    string.
+                    <span>A variável:</span
+                    ><span class="att"> diaDaSemana</span> armazena uma string.
                   </li>
                   <li class="topics">
-                    O valor de <span class="att"> diaDaSemana</span>é comparado
-                    com cada <span class="att">case</span>
+                    <span>O valor de:</span>
+                    <span class="att"> diaDaSemana</span>é comparado com cada
+                    <span class="att">case</span>
                   </li>
                   <li class="topics">
-                    Se o valor corresponder a um <span class="att">case</span>,o
-                    código dentro daquele bloco é executado.
+                    <span>Se o valor corresponder a um:</span>
+                    <span class="att">case,</span> o código dentro daquele bloco
+                    é executado.
                   </li>
                   <li class="topics">
-                    O <span class="att">break</span> interrompe a execução do
+                    <span>O break</span> interrompe a execução do
                     <span class="att">switch</span> após encontrar uma
                     correspondência.
                   </li>
                   <li class="topics">
+                    <span>O default:</span> é executado se nenhum dos<span
+                      class="att"
+                    >
+                      case</span
+                    >
+                    corresponder.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Laços de repetição -->
+      <section id="section-container decision">
+        <h1 class="title-section">Laços de repetição</h1>
+        <div class="variable-container">
+          <div class="content-info">
+            <div class="card">
+              <h2 class="title">O que são laços de repetição?</h2>
+              <p class="description">
+                Laços de repetição são estruturas que permitem executar um bloco
+                de código repetidamente até que uma determinada condição seja
+                atendida. Eles são essenciais para automatizar tarefas
+                repetitivas e iterar sobre conjuntos de dados.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="title">Tipos de laços de repetição:</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>for:</span> Ideal quando você sabe o número exato de
+                  vezes que deseja repetir o bloco de código.
+                </li>
+                <li class="topics">
+                  <span>while:</span>Executa o bloco de código enquanto uma
+                  condição for verdadeira.
+                </li>
+                <li class="topics">
+                  <span>do...while:</span>Executa o bloco de código enquanto uma
+                  condição for verdadeira
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="title">
+                Exemplo 1: Contando de 1 a 10 com o laço for
+              </h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+                  
+      <span class="type-variavel">for</span>( <span class="type-variavel">for</span> i = <span class="number">1</span>; i <= <span class="number">10</span>; i++)  {
+                        <span class="metod">console</span>.log(<span class="string">i</span> )
+                      } ;
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    i = 1: <span class="att">i</span> com o valor 1.
+                  </li>
+                  <li class="topics">
+                    i <= 10: É a condição para continuar o loop. Enquanto<span
+                      class="att"
+                      >i</span
+                    >
+                    for menor ou igual a 10, o loop continua.
+                  </li>
+                  <li class="topics">
+                    i++: Incrementa o valor de <span class="att">i</span>em 1 a
+                    cada iteração.
+                  </li>
+                </ul>
+              </div>
+              <h2 class="title">
+                Calculando a soma dos números de 1 a 100 com o laço while
+              </h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+                 <span class="type-variavel">let</span> <span class="name-object">soma</span> = <span class="number">0</span>
+                 <span class="type-variavel">let</span> <span class="name-object">count</span> = <span class="number">1</span>
+      <span class="type-variavel">while</span>( numero <= <span class="number"> 100</span>)  {
+                      soma += numero;
+                      numero++;
+                        <span class="metod">console</span>.log(<span class="string">"A soma é: ", <span class="name-object">soma</span> </span> )
+                      } ;
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    A variável<span class="att">soma</span> armazena o valor 0
+                  </li>
+                  <li class="topics">
+                    A variável<span class="att">numero</span> armazena o valor
+                    1.Essa variável será usada para controlar o loop e somar os
+                    números.
+                  </li>
+                  <li class="topics">
+                    Swhile (numero <= 100): inicia um laço que se repete
+                    enquanto a condição for verdadeira.
+                  </li>
+                  <li class="topics">
+                    soma += numero: A cada iteração do loop, o valor de
+                    <span class="att">numero </span> é adicionado à variável
+                    <span class="att">soma</span> O operador += é uma forma
+                    abreviada de soma = soma + numero;.
+                  </li>
+                  <li class="topics">
                     O <span class="att">default </span> é executado se nenhum
                     dos<span class="att"> case</span> corresponder.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- metodos de array -->
+      <section id="section-container decision">
+        <h1 class="title-section">
+          Métodos de array no JS Map,filter e reduce
+        </h1>
+        <div class="variable-container">
+          <div class="content-info">
+            <div class="card">
+              <h2 class="title">O que são esses métodos?</h2>
+              <p class="description">
+                São funções de alta ordem que permitem iterar sobre os elementos
+                de um array e realizar operações específicas em cada elemento.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="title">Qual a função de cada um?</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>map():</span> Cria um novo array com os resultados da
+                  aplicação de uma função a cada elemento do array original. É
+                  como aplicar uma transformação a cada elemento
+                </li>
+                <li class="topics">
+                  <span>filter():</span>Cria um novo array com todos os
+                  elementos que satisfazem uma determinada condição. É como
+                  filtrar os elementos de um array.
+                </li>
+                <li class="topics">
+                  <span>reduce():</span>Reduz um array a um único valor,
+                  aplicando uma função acumuladora a cada elemento e um valor
+                  inicial. É útil para calcular totais, médias, etc.
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2 class="title">Usando o map</h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+                  
+      <span class="type-variavel">const </span> numeros = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ,<span class="number">4</span>, <span class="number">5</span>]
+              <span class="coments">//Dobrar cada número</span>
+              <span class="type-variavel">const </span> numerosDobrados = numeros.map(numero >= numer *2);
+               <span class="metod">console</span>.log(numerosDobrados); <span class="coments">//[2, 4, 6, 8, 10]</span>
+                     
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    <span>Criamos um array:</span> com 5 elementos
+                  </li>
+                  <li class="topics">
+                    <span> O map():</span> percorre cada elemento do array
+                    <span class="att">numeros</span>
+                  </li>
+                  <li class="topics">
+                    <span>A função anônima:</span>
+                    <span class="att">numero => numero * 2</span> é aplicada a
+                    cada elemento. Essa função recebe o valor atual como numero
+                    e retorna o dobro desse valor.
+                  </li>
+                  <li class="topics">
+                    <span>O resultado:</span> de cada aplicação da função é
+                    adicionado a um novo array, que é armazenado em
+                    numerosDobrados.
+                  </li>
+                </ul>
+              </div>
+              <h2 class="title">Filtrando números</h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+                  
+      <span class="type-variavel">const </span> numeros = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ,<span class="number">4</span>, <span class="number">5</span>]
+              <span class="coments">//Filtrar números pares</span>
+              <span class="type-variavel">const </span> numerosPares = numeros.filter(numero >= numer % 2 === 0);
+               <span class="metod">console</span>.log(numerosPares); <span class="coments">//[2, 4,]</span>
+                     
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    <span>Criamos um array:</span> novamente temos o mesmo array
+                    <span class="att">numeros</span>
+                  </li>
+                  <li class="topics">
+                    <span>O método filter():</span> percorre cada elemento do
+                    array
+                    <span class="att">numeros</span>
+                  </li>
+                  <li class="topics">
+                    <span>A função anônima:</span>
+                    <span class="att">numero => numero % 2 === 0</span> é
+                    aplicada a cada elemento. Essa função retorna true se o
+                    número for par (resto da divisão por 2 é 0) e false caso
+                    contrário.
+                  </li>
+                  <li class="topics">
+                    <span>O filter():</span> cria um novo array com apenas os
+                    elementos para os quais a função retornou true
+                  </li>
+                </ul>
+              </div>
+              <h2 class="title">Somando todos os números</h2>
+              <div class="code-container">
+                <div class="header-code">
+                  <h3>JavaScript</h3>
+                  <button>copy</button>
+                </div>
+                <div class="code">
+                  <pre> 
+               <code>
+                  
+      <span class="type-variavel">const </span> numeros = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ,<span class="number">4</span>, <span class="number">5</span>]
+              <span class="coments">//Filtrar números pares</span>
+              <span class="type-variavel">const </span> soma  = numeros.reduce((total, numero) => total + numero, 0);
+               <span class="metod">console</span>.log(soma); <span class="coments">//15</span>
+                     
+                    </code>
+                   </pre>
+                </div>
+              </div>
+              <div class="description-code">
+                <ul class="ul-container">
+                  <li class="topics">
+                    <span>Criamos um array:</span> Novamente, temos o mesmo
+                    array
+                    <span class="att">numeros</span>
+                  </li>
+                  <li class="topics">
+                    <span>O método reduce(): </span>itera sobre o array,
+                    aplicando uma função a cada elemento e um acumulador que
+                    colocamos como 0
+                  </li>
+                  <li class="topics">
+                    <span>A função anônima:</span>
+                    <span class="att"> (total, numero) => total + numero</span>
+                    recebe dois parâmetros: total (o valor acumulado) e numero
+                    (o elemento atual).
+                  </li>
+                  <li class="topics">
+                    <span>A função</span> retorna a soma do total e do numero.
+                  </li>
+                  <li class="topics">
+                    O valor inicial do acumulador é 0 (o terceiro argumento de
+                    reduce()).
                   </li>
                 </ul>
               </div>
