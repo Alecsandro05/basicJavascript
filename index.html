@@ -17,10 +17,14 @@
       <header>
         <nav class="navbar">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#variable">Variáveis</a></li>
-            <li class="nav-item"><a href="#object">Objetos</a></li>
             <li class="nav-item">
-              <a href="#repetion">Laços de repetições</a>
+              <a href="#variable">Variáveis</a>
+            </li>
+            <li class="nav-item">
+              <a href="#object">Objetos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#repetition">Laços de repetições</a>
             </li>
             <li class="nav-item">
               <a href="#decision">Estrutura de decisão</a>
@@ -55,7 +59,7 @@
       </main>
       <!-- variaveis -->
       <section id="section-container variable">
-        <h1 class="title-section">VARIÁVEIS</h1>
+        <h1 id="title-variable">VARIÁVEIS</h1>
         <div class="variable-container">
           <div class="content-info">
             <div class="item card">
@@ -84,9 +88,7 @@
                   <div class="code">
                     <pre> 
                <code>
-             
 <span class="type-variavel">let</span> <span class="name-object">name</span> = <span class="string">"Márcio Araya"</span>,
-                     
                     </code>
                    </pre>
                   </div>
@@ -98,9 +100,7 @@
                   <div class="code">
                     <pre> 
                <code>
-             
 <span class="type-variavel">const</span> <span class="name-object">number</span> = <span class="number">333</span>
-                     
                     </code>
                    </pre>
                   </div>
@@ -111,8 +111,8 @@
         </div>
       </section>
       <!-- Objetos -->
-      <section id="section-container object">
-        <h1 class="title-section">Objetos</h1>
+      <section id="section-container">
+        <h1 id="title-objeto">Objetos</h1>
         <div class="variable-container">
           <div class="content-info">
             <div class="item card">
@@ -151,8 +151,8 @@
                   <h3>JavaScript</h3>
                   <button>copy</button>
                 </div>
-                <pre>
-        <div class="code">
+                <div class="code">
+                  <pre>
                  <code>
              <span class="coments">// Criando um objeto literal</span>
                   <span class="type-variavel">const</span> <span class="name-object">pessoa</span> = {
@@ -164,8 +164,8 @@
                         <span class="metod">console</span>.log(<span class="string">"Olá, meu nome é "</span> + <span class="metod">this</span>.nome);
                       }
                     };</code>
-        </div>
-             </pre>
+                    </pre>
+                </div>
               </div>
             </div>
             <div class="card">
@@ -211,8 +211,8 @@
         </div>
       </section>
       <!-- Estrutura de decisão -->
-      <section id="section-container decision">
-        <h1 class="title-section">Estrutura de decisão</h1>
+      <section id="decision section-container">
+        <h1 id="title-decision">Estrutura de decisão</h1>
         <div class="variable-container">
           <div class="content-info">
             <div class="card">
@@ -352,8 +352,8 @@ Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
         </div>
       </section>
       <!-- Laços de repetição -->
-      <section id="section-container decision">
-        <h1 class="title-section">Laços de repetição</h1>
+      <section id="repetition section-container">
+        <h1 id="title-repetition">Laços de repetição</h1>
         <div class="variable-container">
           <div class="content-info">
             <div class="card">
@@ -472,11 +472,143 @@ Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
           </div>
         </div>
       </section>
-      <!-- metodos de array -->
-      <section id="section-container decision">
-        <h1 class="title-section">
-          Métodos de array no JS Map,filter e reduce
-        </h1>
+
+      <!-- for each, ofr in  e for of -->
+      <section id="section-container repetition">
+        <h1 id="title-loops">Loops: for in, for of e forEach</h1>
+        <div class="variable-container">
+          <div class="content-info">
+            <div class="card">
+              <h2 class="title">O que são esse loops?</h2>
+              <p class="description">
+                Em JavaScript, temos diversas formas de iterar sobre arrays e
+                objetos. Três das mais comuns são o for in, for of e forEach.
+                Cada um possui suas particularidades e é mais adequado para
+                determinadas situações.
+              </p>
+            </div>
+            <div class="card">
+              <h2 class="title">for in</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>Uso:</span>Iterar sobre as propriedades enumeráveis de
+                  um objeto.
+                </li>
+                <li class="topics">
+                  <span>Exemplo</span>
+                </li>
+              </ul>
+              <div class="code-container">
+                <div class="code">
+                  <pre>
+                 <code>
+                  <span class="type-variavel">const</span> <span class="name-object">pessoa </span> = {
+                      <span class="key">nome</span>: <span class="string">"Marcio Araya"</span>, 
+                      <span class="key">idade</span>: <span class="number">28</span>,
+                      <span class="key">cidade</span>: <span class="string">"Brasília"</span>,
+                  }
+                      <span class="type-variavel">for</span>(<span class="type-variavel">let</span> propriedades <span class="type-variavel">in</span> pessoa)  {
+                        <span class="metod">console</span>.log(propriedade + ": " + pessoa[propriedade])
+                        } ;
+                  </code>
+                    </pre>
+                </div>
+              </div>
+
+              <h2>saida</h2>
+              <div class="code-container">
+                <div class="code">
+                  <pre>
+ 
+               nome: Marcio Araya
+               idade: 28
+               cidade: Brasília
+                   </pre
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- //for of -->
+            <div class="card">
+              <h2 class="title">for of</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>Uso:</span>Iterar sobre valores de arrays e objetos
+                  iteráveis (como strings, Map, Set).
+                </li>
+                <li class="topics">
+                  <span>Exemplo</span>
+                </li>
+              </ul>
+              <div class="code-container">
+                <div class="code">
+                  <pre>
+                 <code>
+                  <span class="type-variavel">const</span> <span class="name-object">frutas </span> = [<span class="string">"maçã"</span>, <span class="string">"banana"</span>, <span class="string">"laranja"</span>]
+                      <span class="type-variavel">for</span>(<span class="type-variavel">let</span> fruta <span class="type-variavel">of</span> frutas)  {
+                        <span class="metod">console</span>.log(fruta)
+                        } ;
+                  </code>
+                    </pre>
+                </div>
+              </div>
+
+              <h2>saida</h2>
+              <div class="code-container">
+                <div class="code">
+                  <pre>
+ 
+               maçã
+               banana
+               laranja
+                   </pre
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- for each -->
+            <div class="card">
+              <h2 class="title">forEach</h2>
+              <ul class="ul-container">
+                <li class="topics">
+                  <span>Uso:</span>Executar uma função para cada elemento de um
+                  array.
+                </li>
+                <li class="topics">
+                  <span>Exemplo</span>
+                </li>
+              </ul>
+              <div class="code-container">
+                <div class="code">
+                  <pre>
+                 <code>
+                  <span class="type-variavel">const</span> <span class="name-object">numeros </span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4 </span>,<span class="number">5 </span> ]
+                      <span class="type-variavel">for</span>(<span class="type-variavel">let</span> fruta <span class="type-variavel">of</span> frutas)  {
+                        <span class="metod">console</span>.log(fruta)
+                        } ;
+                  </code>
+                    </pre>
+                </div>
+              </div>
+
+              <h2>saida</h2>
+              <div class="code-container">
+                <div class="code">
+                  <pre>
+ 
+               maçã
+               banana
+               laranja
+                   </pre
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="metodos section-container">
+        <h1 id="title-metodos">Métodos de array no JS Map,filter e reduce</h1>
         <div class="variable-container">
           <div class="content-info">
             <div class="card">
@@ -515,8 +647,7 @@ Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
                 </div>
                 <div class="code">
                   <pre> 
-               <code>
-                  
+               <code>         
       <span class="type-variavel">const </span> numeros = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ,<span class="number">4</span>, <span class="number">5</span>]
               <span class="coments">//Dobrar cada número</span>
               <span class="type-variavel">const </span> numerosDobrados = numeros.map(numero >= numer *2);
@@ -556,8 +687,7 @@ Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
                 </div>
                 <div class="code">
                   <pre> 
-               <code>
-                  
+               <code>       
       <span class="type-variavel">const </span> numeros = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ,<span class="number">4</span>, <span class="number">5</span>]
               <span class="coments">//Filtrar números pares</span>
               <span class="type-variavel">const </span> numerosPares = numeros.filter(numero >= numer % 2 === 0);
@@ -599,8 +729,7 @@ Caso contrário, a mensagem "Você é menor de idade." é exibida. -->
                 </div>
                 <div class="code">
                   <pre> 
-               <code>
-                  
+               <code>       
       <span class="type-variavel">const </span> numeros = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> ,<span class="number">4</span>, <span class="number">5</span>]
               <span class="coments">//Filtrar números pares</span>
               <span class="type-variavel">const </span> soma  = numeros.reduce((total, numero) => total + numero, 0);
