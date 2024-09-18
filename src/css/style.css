@@ -221,3 +221,24 @@ span {
     flex-direction: column; /* Single-column layout for smaller screens */
   }
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  color: #fff;
+}
+footer > ul {
+  background-color: #1e1f20;
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+}
